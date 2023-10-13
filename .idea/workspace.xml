@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4df6b352-7179-4279-ba74-91cfb8e37e6a" name="变更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Gw2sbOk4cOOzYHJP2VpQq2EJxD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/毛/testP2P&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;项目&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\毛\testP2P\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Client">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client" />
+      <module name="testP2P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientSocketFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientSocketFrame" />
+      <module name="testP2P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClientSocketFrame2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientSocketFrame2" />
+      <module name="testP2P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="testP2P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerSocketFrame" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ServerSocketFrame" />
+      <module name="testP2P" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="应用程序.Client" />
+      <item itemvalue="应用程序.Server" />
+      <item itemvalue="应用程序.ClientSocketFrame" />
+      <item itemvalue="应用程序.ClientSocketFrame2" />
+      <item itemvalue="应用程序.ServerSocketFrame" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Client" />
+        <item itemvalue="应用程序.Server" />
+        <item itemvalue="应用程序.ClientSocketFrame2" />
+        <item itemvalue="应用程序.ClientSocketFrame" />
+        <item itemvalue="应用程序.ServerSocketFrame" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="4df6b352-7179-4279-ba74-91cfb8e37e6a" name="变更" comment="" />
+      <created>1667285534510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667285534510</updated>
+      <workItem from="1667285535972" duration="3101000" />
+      <workItem from="1667384209506" duration="9446000" />
+      <workItem from="1667461954811" duration="376000" />
+      <workItem from="1667887116707" duration="13183000" />
+      <workItem from="1667970072284" duration="17274000" />
+      <workItem from="1667989083700" duration="633000" />
+      <workItem from="1667996676717" duration="9000" />
+      <workItem from="1668000813109" duration="344000" />
+      <workItem from="1668054262667" duration="7347000" />
+      <workItem from="1668071690577" duration="2203000" />
+      <workItem from="1668084255090" duration="467000" />
+      <workItem from="1668134371367" duration="13549000" />
+      <workItem from="1668316676906" duration="6910000" />
+      <workItem from="1668341710970" duration="8000" />
+      <workItem from="1668473704954" duration="2527000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
