@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -42,6 +43,10 @@ public class Client {
         private JLabel portLabel = new JLabel("Port:", SwingConstants.CENTER);
         private JTextField portTextField = new JTextField();
         private JButton Connect = new JButton("Connect");
+
+        private DesSystem d = new DesSystem();
+
+        private String key = "12345678";
 
         public ClienStart() {
             setTitle("socketClient");
@@ -134,7 +139,29 @@ public class Client {
                         Connect.setEnabled(true);
                     } else {
                         // send the message content and sender's name to server
-                        outputStream.println(inputField.getText() + "_" + userName);
+                        String message = inputField.getText();
+                        if (inputField.getText().startsWith("{BROADCAST")){
+                            if (inputField.getText().trim().startsWith("{")) {
+                                // encrypt the broadcast message
+                                String m1 = inputField.getText().trim().replace("{", "").replace("{", "")
+                                        .replace("{", "").replaceAll("}", "");
+                                String[] m2 = m1.split("_");
+//                                System.out.println(m2[1]);
+                                message = "{BROADCAST_{" + d.encrypt(key, m2[1]) + "}}";
+                            }
+                        } else if (inputField.getText().startsWith("{MESSAGE")) {
+                            if (inputField.getText().trim().startsWith("{")) {
+                                // encrypt the p2p message
+                                String m1 = inputField.getText().trim().replace("{", "").replace("{", "")
+                                        .replace("{", "").replaceAll("}", "");
+                                String[] m2 = m1.split("_");
+                                System.out.println(Arrays.toString(m2));
+//                                System.out.println(m2[1]);
+                                m2[2] = d.encrypt(key, m2[2]);
+                                message = "{MESSAGE" + "_" + m2[1] + "_{" + m2[2] + "}}";
+                            }
+                        }
+                        outputStream.println(message + "_" + userName);
                         inputField.setText("");
                     }
 
@@ -231,6 +258,7 @@ public class Client {
                                         textArea.append(message + "\n");
                                     }
                                     if (message != null) {
+                                        System.out.println("1: " + message);
                                         if (message.equals("{STOP1}")) {
                                             // you close the connection between you and server
                                             textArea.append("You've stopped the connection\n" + "Client will be close in 5s");

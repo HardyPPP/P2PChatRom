@@ -34,6 +34,9 @@ public class Server {
         private JScrollPane panel = new JScrollPane(textArea);
         private JLabel statusLabel = new JLabel("", SwingConstants.CENTER);
         // record the status of server
+        private DesSystem d = new DesSystem();
+
+        private String key = "12345678";
         public serverStart() {
             setTitle("HardyPrime Server");
             //my server name
@@ -137,8 +140,11 @@ public class Server {
                 if (m1.startsWith("BROADCAST")) {
                     // broadcast
                     String[] m2 = m1.split("_");
+                    System.out.println(m2[1]);
+
                     textArea.append("\n" + m2[2] + ": " + m2[1]);
-                    System.out.println(m2[2]);
+                    m2[1] = d.decrypt(key, m2[1]);
+//                    System.out.println(m2[2]);
                     // broadcast the content to all client
                     for (Socket s_2 : inputStream.keySet()) {
                         inputStream.get(s_2).println(m2[2] + ": " + m2[1] + "\n");
@@ -149,6 +155,7 @@ public class Server {
                     textArea.append("\n" + m2[3] + " -> " + m2[1] + ": " + m2[2]);
                     // find the target receiver's port and ip
                     if (userP.get(m2[1])!=null) {
+                        m2[2] = d.decrypt(key, m2[2]);
                         String ss = "USER:_" + userP.get(m2[1]).port + "_" + userP.get(m2[1]).ip + "_" + m2[2] + "_" + m2[1];
                         inputStream.get(s).println(ss);
                         userCommands.get(m2[3]).add("{MESSAGE" + "_" + m2[1] + "_{" + m2[2] + "}}");

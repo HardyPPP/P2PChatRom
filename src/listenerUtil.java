@@ -10,6 +10,10 @@ public class listenerUtil extends Thread {
     //the target server
     public Socket socket;
     //client socket
+
+    private DesSystem d = new DesSystem();
+
+    private String key = "12345678";
     public listenerUtil(BufferedReader r, Server.serverStart s, Socket self) {
         reader = r;
         server = s;
